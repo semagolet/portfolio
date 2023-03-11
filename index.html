@@ -27,7 +27,92 @@
         </div>
     </div>
    </div>
+<!----------------------about------------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal-portfolio-img/images/user.png">
+            </div>
 
-   <div id="about"></div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an engineer with a bachelor's degree in computer engineering who has an insatiable desire for knowledge. My only goal is to be a good, creative and useful engineer for my country. I am confident in teamwork and exchanging ideas with my teammates, and I know that I can succeed in the most appropriate way. Also, as a newly graduated engineer, I think that I can add different visions to my colleagues and my company as a perspective on engineering problems.</p>
+           <div class="tab-titles">
+            <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+           <div class="tab-contents active-tab" id="skilss">
+            <ul>
+                <li><span>UI?UX</span><br>Designinf web</li>
+                <li><span>Web development</span><br>Designinf web</li>
+                <li><span>App development</span><br>Designinf web</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="experiences">
+            <ul>
+                <li><span>UI?UX</span><br>Designinf web</li>
+                <li><span>Web development</span><br>Designinf web</li>
+                <li><span>App development</span><br>Designinf web</li>
+            </ul>
+           </div>
+           <div class="tab-contents" id="education">
+            <ul>
+                <li><span>UI?UX</span><br>Designinf web</li>
+                <li><span>Web development</span><br>Designinf web</li>
+                <li><span>App development</span><br>Designinf web</li>
+            </ul>
+           </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<!---- portfolio------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class ="work">
+                <img src="personal-portfolio-img/images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>alkfdnkjsdgnkjdfgdfhgf</p>
+                </div>
+            </div>
+            <div class ="work">
+                <img src="personal-portfolio-img/images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>alkfdnkjsdgnkjdfgdfhgf</p>
+                </div>
+            </div>
+            <div class ="work">
+                <img src="personal-portfolio-img/images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>alkfdnkjsdgnkjdfgdfhgf</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+{
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+}
+   </script>
 </body>
 </html>
